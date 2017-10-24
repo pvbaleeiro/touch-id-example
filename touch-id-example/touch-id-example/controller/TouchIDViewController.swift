@@ -93,14 +93,14 @@ class TouchIDViewController: UIViewController {
                     case LAError.passcodeNotSet:
                         print("Passcode is not set on the device.")
                         //self.message.text = "Passcode is not set on the device."
-                    case LAError.touchIDNotAvailable:
+                    case LAError.biometryNotAvailable:
                         print("Touch ID is not available on the device.")
                         //self.message.text = "Touch ID is not available on the device."
-                    case LAError.touchIDNotEnrolled:
+                    case LAError.biometryNotEnrolled:
                         print("Touch ID has no enrolled fingers.")
                         //self.message.text = "Touch ID has no enrolled fingers."
                     // iOS 9+ functions
-                    case LAError.touchIDLockout:
+                    case LAError.biometryLockout:
                         print("There were too many failed Touch ID attempts and Touch ID is now locked.")
                         //self.message.text = "There were too many failed Touch ID attempts and Touch ID is now locked."
                     case LAError.appCancel:
